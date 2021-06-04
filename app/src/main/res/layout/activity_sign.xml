@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignActivity"
+    android:id="@+id/sign_container">
+    <ImageView
+        android:id="@+id/sign_backbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/back_button"/>
+    <TextView
+        android:id="@+id/sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  회원가입  "
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/sign_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="40dp"
+        android:hint="이름"
+        android:textColorHint="@color/black"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <EditText
+            android:id="@+id/sign_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:hint="이메일"
+            android:textColorHint="@color/black" />
+        <Button
+            android:id="@+id/sign_email_check"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:text="중복확인"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="50dp"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/sign_password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="40dp"
+        android:hint="비밀번호"
+        android:textColorHint="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingVertical="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/blackround">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp">
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="서비스 이용약관 전체 동의"
+                android:gravity="center"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginHorizontal="50dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp">
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="[필수]개인정보 이용 약관 동의]"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp">
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="[필수]개인정보 이용 약관 동의]"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_signbtn"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="60dp"
+        android:background="@drawable/roundbtn"
+        android:text="회원가입"
+        android:textSize="20dp"
+        android:textColor="@color/sky"
+        android:gravity="center"/>
+</LinearLayout>

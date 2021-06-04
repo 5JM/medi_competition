@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/house"
+        android:enabled="true"
+        android:title="홈"/>
+    <item
+        android:id="@+id/menu_calender"
+        android:icon="@drawable/calender"
+        android:enabled="true"
+        android:title="캘린더"/>
+
+    <item
+        android:id="@+id/menu_phar"
+        android:icon="@drawable/pills"
+        android:enabled="true"
+        android:title="약국" />
+    <item
+        android:id="@+id/menu_mypage"
+        android:icon="@drawable/human"
+        android:enabled="true"
+        android:title="MY"/>
+</menu>

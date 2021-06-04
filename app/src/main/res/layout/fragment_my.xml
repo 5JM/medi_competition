@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".fragments.MyFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+    <com.skydoves.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        app:expandable_duration="300"
+        app:expandable_isExpanded="false"
+        app:expandable_parentLayout="@layout/mypage_layout_parent"
+        app:expandable_secondLayout="@layout/mypage_layout_second"
+        app:expandable_showSpinner="true"
+        app:expandable_spinner="@drawable/ic_arrow_down"
+        app:expandable_spinner_animate="true"
+        app:expandable_spinner_margin="14dp"
+        app:expandable_spinner_gravity="start"
+        app:expandable_spinner_size="32dp"
+        >
+
+    </com.skydoves.expandablelayout.ExpandableLayout>
+
+    <com.skydoves.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        app:expandable_duration="300"
+        app:expandable_isExpanded="false"
+        app:expandable_parentLayout="@layout/mypage_layout_parent2"
+        app:expandable_secondLayout="@layout/mypage_layout_second2"
+        app:expandable_showSpinner="true"
+        app:expandable_spinner="@drawable/ic_arrow_down"
+        app:expandable_spinner_animate="true"
+        app:expandable_spinner_margin="14dp"
+        app:expandable_spinner_gravity="start"
+        app:expandable_spinner_size="32dp"
+        >
+
+    </com.skydoves.expandablelayout.ExpandableLayout>
+
+    <TextView
+        android:id="@+id/mypage_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="로그아웃"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:paddingLeft="30dp"
+        android:padding="16dp"/>
+</LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/phar_name"
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="온누리 약국"
+            android:textStyle="italic"
+            android:textColor="@color/sky"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowColor="#888887"
+            android:shadowRadius="1.5"
+            />
+        <TextView
+            android:id="@+id/phar_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_margin="7dp"
+            android:text="02-1234-1234"/>
+        <TextView
+            android:id="@+id/phar_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="7dp"
+            android:textColor="@color/blurblack"
+            android:text="서울특별시 용산구"/>
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

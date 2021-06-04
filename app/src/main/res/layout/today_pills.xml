@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp">
+    <CheckBox
+        android:id="@+id/drug_checkbox"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:clickable="false"
+        android:layout_marginVertical="16dp"/>
+    <TextView
+        android:id="@+id/drug_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="drug_name"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/drug_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="복용했나요?"
+        android:textSize="25dp"
+        android:layout_marginVertical="16dp"
+        android:textColor="@color/sky"/>
+</LinearLayout>
